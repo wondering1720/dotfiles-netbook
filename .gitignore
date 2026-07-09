@@ -1,0 +1,8 @@
+# Carpetas de sistema que no queremos rastrear
+.DS_Store
+*.swp
+
+# Cosas que no deben subir nunca
+.env
+secrets.sh
+*.key
