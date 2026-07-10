@@ -1,0 +1,23 @@
+# Tecla Mod (Mod4 = Tecla Windows)
+set $mod Mod4
+
+# Fuente del sistema
+font pango:DejaVu Sans Mono 8
+
+# Usar mouse con la tecla Mod
+floating_modifier $mod
+
+# Atajo para abrir la terminal KITTY
+bindsym $mod+Return exec kitty
+
+# Atajo para abrir dmenu (el buscador de apps)
+bindsym $mod+d exec dmenu_run
+
+# Atajo para cerrar ventanas
+bindsym $mod+Shift+q kill
+
+# Atajo para reiniciar i3 en caliente
+bindsym $mod+Shift+r restart
+
+# Atajo para salir de i3 (regresar a la terminal de texto)
+bindsym $mod+Shift+e exec i3-msg exit
